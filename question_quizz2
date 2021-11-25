@@ -1,0 +1,11 @@
+| Question deuxième quizz | 
+
+let r = 1 + true
+.toString();
+
+Question : Que vaut r ?
+
+1- "1true"
+2- 2
+3- "2"
+4- SyntaxError
