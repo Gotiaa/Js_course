@@ -1,3 +1,6 @@
+const chai = require("chai");
+
+
 function map(iterable, f){
     if(iterable.length===0)return;
     let current = iterable[0];
@@ -16,9 +19,9 @@ function map(iterable, f){
 }
 
 const iterator = map("Hello", v=>v.toUpperCase());
-console.log(iterator.next().value); // => "H"
-console.log(iterator.next().value); // => "E"
-console.log(iterator.next().value); // => "L"
-console.log(iterator.next().value); // => "L"
-console.log(iterator.next()); // => "O"
-console.log(iterator.next()); // => true
+chai.assert.equal(iterator.next().value, "H"); // => "H"
+chai.assert.equal(iterator.next().value,"E"); // => "E"
+chai.assert.equal(iterator.next().value,"L"); // => "L"
+chai.assert.equal(iterator.next().value,"L"); // => "L"
+chai.assert.equal(iterator.next().value,"O"); // => "O"
+// chai.assert.equal(iterator.done, true); // => true
