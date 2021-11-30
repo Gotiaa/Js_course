@@ -18,3 +18,6 @@ strtest = padRight('|',strtest,10);
 console.log(strtest);
 console.log(padZeros("test",10));
 console.log(padSpace("test",10));
+
+const chai = require('chai');
+chai.assert.equal(padRight(" ", "45", 8),"45      "); // => "45    

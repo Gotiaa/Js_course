@@ -16,5 +16,7 @@ const a2 = [1, 2, [3,4,[5,6,{prenom : "toto"}]], 5] // Deep copy
 const b1 = [1, 2, [3, 4], 5];
 const b2 = JSON.parse(JSON.stringify(b1)); 
 
-console.log(deepEqual(a1, a2)); // => false
-console.log(deepEqual(b1, b2)); // => true
+const chai = require('chai');
+
+chai.assert.equal(deepEqual(a1, a2),false); // => false
+chai.assert.equal(deepEqual(b1, b2),true); // => true

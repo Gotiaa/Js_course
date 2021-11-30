@@ -12,3 +12,7 @@ function initWith(size, f) {
 
 console.log(initWith(5, from42));
 console.log(initWith(5, withZero));
+
+const chai = require('chai');
+chai.assert.equal(initWith(5, from42), [42,43,44,45,46]);
+chai.assert.equal(initWith(5,withZero), [0,0,0,0,0]);

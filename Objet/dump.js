@@ -8,9 +8,12 @@ function dump(obj){
     return showObject;
 }
 
-// let obj = {};
-// obj.firstname = "Alan";
-// obj.lastname = "Turing";
-// obj.birthday = [1921, 6, 23];
-// let str = dump(obj);
-// console.log(str); // => {firstname:"Alan",lastname:"Turing",birthday:[1921,6,23]
+let obj = {};
+obj.firstname = "Alan";
+obj.lastname = "Turing";
+obj.birthday = [1921, 6, 23];
+let str = dump(obj);
+// console.log(str); // => {firstname:"Alan",lastname:"Turing",birthday:[1921,6,23]}
+
+const chai = require('chai');
+chai.assert.equal(str, {firstname:"Alan",lastname:"Turing",birthday:[1921,6,23]})

@@ -15,4 +15,8 @@ function split(str, sep){
     return t;
 }
 
-console.log("test de separateur",' ');
+console.log(split("I'm reading a wooden book.", "o"));
+console.log("Not working :/");
+// const chai = require('chai');
+// chai.assert.equals(split("Bonjour, je m'appelle Jean !", ["Bonjour,", "je", "m'appelle", "Jean", "!"])); // => ["Bonjour,", "je", "m'appelle", "Jean", "!"]
+// chai.assert.equals(split("I'm reading a wooden book.", "oo"),["I'm reading a w", "den b", "k."]) // => ["I'm reading a w", "den b", "k."]

@@ -20,3 +20,6 @@ const padSpace = (str, quantity) => padLeft(' ', str, quantity);
 // console.log(strtest);
 // console.log(padZeros("test", 10));
 // console.log(padSpace("test", 10));
+
+const chai = require('chai');
+chai.assert.equal(padLeft("0", "123", 6),"000123"); // => "000123"

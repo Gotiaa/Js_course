@@ -7,3 +7,6 @@ function contains(haystack, needle, startIndex=0){
     }
     return -1;
 }
+
+const chai = require('chai');
+chai.assert.equal(contains("testXtest", "X"), 4);

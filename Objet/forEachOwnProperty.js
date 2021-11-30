@@ -12,3 +12,7 @@ o2.c = 3;
 const props = [];
 o2.forEachOwnProperty(prop => props.push(prop));
 console.log(props); // => ["b", "c"]; mais pas "a"
+
+const chai = require('chai');
+chai.assert.equal(props,[ 'b', 'c' ]);
+
